@@ -1,0 +1,10 @@
+import pandas as pd
+a=pd.Series([2,4,3,7,99,8,5])
+map=a.map(lambda x:x*2)
+print('Mapped',map)
+apply=a.apply(lambda x:x**0.2)
+print('Applied',apply)
+sorted=a.sort_values()
+print('Sorted',sorted)
+dropped=a.drop([3,5])
+print('Dropped',dropped)
